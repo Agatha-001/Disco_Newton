@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disco de Newton • Projeto Integrador</title>
+  </head>
+<body>
+<div class="container">
+  <header>
+    <h1>🌀 Disco de Newton</h1>
+    <div class="subtitulo">Projeto Integrador • Óptica + Sustentabilidade</div>
+  </header>
+
+  <!-- Navegação -->
+  <nav>
+    <a href="#" data-secao="home" class="nav-link ativa">Início</a>
+    <a href="#" data-secao="projeto" class="nav-link">Projeto Piscina</a>
+    <a href="#" data-secao="quizz" class="nav-link">Quizz</a>
+    <a href="#" data-secao="flashcards" class="nav-link">Flashcards</a>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="secao ativa">
+    <div class="img-placeholder">
+      <span>🎨 Disco de Newton — síntese de cores</span>
+    </div>
+    <p style="font-size:1.2rem; margin-bottom: 1rem;"><strong>Descoberto no séc. XVII</strong> por Isaac Newton, o disco revela que a luz branca é composta pelas cores do arco-íris: <strong>vermelho, laranja, amarelo, verde, azul, anil e violeta</strong>.</p>
+    <p>Ao girar em alta velocidade, as cores se sobrepõem na retina, criando a ilusão do branco. Hoje, o disco é usado no ensino de óptica para demonstrar a síntese aditiva de cores.</p>
+    <div class="card-grid">
+      <div class="card">🔴 <strong>Vermelho</strong> • 620–750 nm</div>
+      <div class="card">🟠 <strong>Laranja</strong> • 590–620 nm</div>
+      <div class="card">🟡 <strong>Amarelo</strong> • 570–590 nm</div>
+      <div class="card">🟢 <strong>Verde</strong> • 495–570 nm</div>
+      <div class="card">🔵 <strong>Azul</strong> • 450–495 nm</div>
+      <div class="card">🟣 <strong>Anil / Violeta</strong> • 380–450 nm</div>
+    </div>
+    <p style="background:#eef4f9; padding:1rem; border-radius:2rem; margin-top:1rem;"><strong>💡 Analogia com o projeto:</strong> Assim como o disco mistura cores, as placas solares absorvem diferentes comprimentos de onda para converter luz em calor — eficiência depende da cor e textura do material.</p>
+  </section>
+
+  <!-- PROJETO PISCINA -->
+  <section id="projeto" class="secao">
+    <h2>🌊 Aquecimento sustentável da piscina do CEP</h2>
+    <p><strong>Desafio:</strong> aquecer a piscina térmica de forma eficiente e sustentável, integrando óptica, automação e acessibilidade.</p>
+    <div class="card-grid">
+      <div class="card"><h3>☀️ Óptica aplicada</h3> Coletores com superfície seletiva (alta absorção, baixa emissão). Cores escuras maximizam absorção da radiação — inspirado no disco de Newton, escolhemos materiais que absorvem todo o espectro visível.</div>
+      <div class="card"><h3>🤖 Robótica & programação</h3> Sensores de temperatura e fluxo, atuadores para bombas e válvulas. Controle por Arduino com lógica fuzzy para otimizar o aquecimento. <br> <span style="background:#dce6ed; padding:0.2rem 0.8rem; border-radius:40px;">fluxograma no site (versão simplificada)</span></div>
+      <div class="card"><h3>♿ Acessibilidade</h3> Site com contraste WCAG, textos alternativos, navegação por teclado e fontes legíveis. Projeto inclusivo para toda a comunidade.</div>
+    </div>
+    <div class="img-placeholder" style="background:#d4e2ed;">
+      <span>📊 Diagrama de controle: sensores → microcontrolador → atuadores</span>
+    </div>
+    <p><strong>Inovação social:</strong> uso de materiais reciclados e captação passiva, reduzindo custos e impacto ambiental. Conscientização sobre sustentabilidade e inclusão.</p>
+  </section>
+
+  <!-- QUIZZ -->
+  <section id="quizz" class="secao">
+    <h2>🧪 Quizz do Disco de Newton</h2>
+    <div id="quizzContainer" class="quizz-box">
+      <p id="perguntaQuizz" style="font-weight:600; font-size:1.3rem;"></p>
+      <div id="alternativasQuizz"></div>
+      <button id="proximaQuizz" class="btn" style="margin-top:1.2rem;">Próxima</button>
+      <div id="resultadoQuizz" style="margin-top:1rem; font-weight:500;"></div>
+    </div>
+  </section>
+
+  <!-- FLASHCARDS -->
+  <section id="flashcards" class="secao">
+    <h2>📇 Flashcards • Síntese de cores</h2>
+    <div class="flashcard-area">
+      <div id="flashcardFront" class="flashcard">Clique para virar</div>
+      <div class="flashcard-btn-group">
+        <button id="btnVirar" class="btn">↻ Virar</button>
+        <button id="btnProxCard" class="btn btn-outline">→ Próximo</button>
+        <button id="btnResetCard" class="btn btn-outline">↺ Reiniciar</button>
+      </div>
+      <p style="font-size:0.9rem; opacity:0.7;">Card <span id="cardIndex">1</span>/<span id="cardTotal">6</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <span>🔬 Projeto Integrador • 2026</span>
+    <span class="badge-acess">♿ Acessível • contraste + legibilidade</span>
+  </footer>
+</div>
